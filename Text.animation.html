@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Nav Bar</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+    font-family: 'poppins', sans-serif;
+}
+        .container{
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            background-position: center;
+            background-size: cover;
+            padding: 5px;
+            position: relative;
+            overflow: hidden;
+
+        
+        }
+      .container h1{
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 20px;
+        color: rgba(0, 0, 255, 0.555);
+        font-size: 15px;
+      }
+        .hero{
+            position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 5px;
+    overflow: hidden;
+    
+}
+       nav{
+        position: absolute;
+         margin-top: -3px;
+         margin-left: 150px;
+         padding: 10px 0;
+         display: flex;
+         align-items: center;
+         color:black;
+         justify-content: space-between;
+
+      }
+      nav ul li{              
+        display: inline-block;
+        list-style: none;
+        margin: 10px 15px;
+      }
+       nav ul li a{
+        color: gray;
+        text-decoration: none; 
+       }
+     .icon{
+        margin-left: 50px;
+
+     }
+     .icon i{
+         font-size: 20px;
+         padding: 10px;
+         
+     }
+
+     .content{
+        margin-top: 15%;
+        margin-left: 60px;
+     }
+        .content h2{
+        
+            opacity: 0;
+    transform: translatey(30px);
+    animation: moveup 1s linear forwards;
+        }
+       span{
+        color: rgba(0, 0, 255, 0.678);
+        font-size: 30px;
+
+       }
+
+       .content p{
+        animation-delay: 1.5s;
+        opacity: 0;
+    transform: translatey(30px);
+    animation: moveup 1.5s linear forwards;
+       }
+      
+       .btn{
+      
+        border: 1px solid black;
+        width: 10%;
+        height: 40px;
+        margin-left: 40px;
+        border-radius: 10px;
+        background-color: rgb(54, 54, 160);
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        
+       }
+       
+       button{
+        border: 1px solid black;
+        width: 10%;
+        height: 40px;
+        margin-left: 15%;
+        border-radius: 10px;
+        background-color: gray;
+        color: black;
+        font-size: 16px;
+        position: absolute;
+        cursor: pointer;
+
+       }
+     
+       .image{
+        position: absolute;
+        margin-top: -10%;
+        margin-left: 60%;
+        transition: 0.5s;
+        opacity: 0;
+    transform: translatey(30px);
+    animation: moveup 2s linear forwards;
+        
+       
+       }
+    .brown{
+        animation-delay: 2.5s;
+        opacity: 0;
+    transform: translatey(30px);
+    animation: moveup 2.5s linear forwards;
+    }
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
+       
+@media(max-width=900px){
+    .container{
+          padding: 0 25px;
+    }
+    .content h2{
+    font-size: 4rem;
+  }
+  .nav ul li a{
+    font-size: 1rem;
+  }
+}
+
+@media(min-width=200px){
+    .container{
+          padding: 0 25px;
+    }
+    .content h2{
+    font-size: 4rem;
+  }
+  .nav ul li a{
+    font-size: 1rem;
+  }
+}
+   
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Usama Murtaza</h1>
+        <div class="hero">
+        <nav>
+            <ul>
+                <li>
+        <a href="#">Home</a></li>
+
+        <li>  <a href="#">About</a></li>
+
+        <li> <a href="#">WebsiteFeatures</a></li>
+
+        <li> <a href="#">Blog</a></li>
+
+        <li> <a href="#">FAQs</a></li>
+
+        <li> <a href="#">Get Started</a></li>
+
+        <li><a href="#">Login</a></li>
+    </ul>
+     <div class="icon">
+        <i class="fa-brands fa-twitter"></i> 
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-facebook"></i>
+    </div><!--icon-->
+
+        </nav>
+    </div> <!--hero-->
+      
+    <div class="content">
+      <h2>Welcome to <span>Usama Murtaza.</span> <br> Develop anything</h2>
+      <br>
+      <p>Built beautiful, modern website with flexible and animated with the help of (HTML CSS JAVA SCRIPT).</p>
+      <br> 
+    </div> <!--content-->
+       <div class="brown">
+          <button class="btn">Veiw AI Page <i class="fa-solid fa-arrow-right"></i></button>
+          <button>Documentation</button>
+       </div> <!--brown-->
+      
+       <div class="image">
+        <img src="mobile_pics-removebg-preview.png">
+       </div> <!--image-->
+
+
+    </div><!--container-->
+   
+</body>
+</html>
